@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
 // Health check
-app.get('/health', (_req, res) => {
+app.get('/', (_req, res) => {
   res.json({ status: 'success', message: 'Server is running', timestamp: new Date().toISOString() });
 });
 
