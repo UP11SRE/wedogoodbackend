@@ -1,9 +1,17 @@
 node_modules/
 .env
 uploads/*.csv
+uploads/
 *.log
 .DS_Store
 dist/
 coverage/
 .vscode/
 .idea/
+
+# Don't push these files
+.eslintrc.json
+.prettierrc
+QUICKSTART.md
+TEST_RESULTS.md
+package-lock.json
